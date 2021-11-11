@@ -1,23 +1,54 @@
 body{
-    background-color: rgba(255, 255, 255, 0.8);
-    /* background-image: url(../logo.jpg);
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    background-image: url(../images/george-pagan-iii-5b-glN15ric-unsplash.jpg);
     background-repeat: no-repeat;
     background-attachment:fixed;
-    background-size: cover; */
+    background-size: cover;
+}
+.header{
+    display: flex;
+    text-align: center;
+    color: #f89e02;
+    background-color: black;
+    margin: 2px;
+    padding: 10px 5px;
+}
+.header h1{
+    margin-left: 265px;
+}
+.logo2 img{
+    width: 120px;
+    height: 120px;
+    margin-left: 310px;
 }
 .container{
-    margin: 80px 350px 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.facilitator{
+    margin: 80px 100px 30px 50px;
     background-color: #FCB43A;
     text-align: center;
     padding-bottom: 20px;
     border-radius: 10px;
 }
+.student{
+    margin: 80px 80px 30px 80px;
+    background-color: #f89e02;
+    text-align: center;
+    padding-bottom: 20px;
+    border-radius: 10px;
+}
+.remember{
+    /* background-color: blanchedalmond; */
+}
 .logo img{
     display: block;
-    width: 150px;
-    height: 150px;
-    padding-top: 20px;
+    width: 120px;
+    height: 120px;
+    padding-top: 0px;
     margin: auto;
+    padding-left: 5px;
 }
 ::placeholder{
     font-size: 15px;
@@ -55,4 +86,9 @@ a{
 a:hover{
     text-decoration: underline;
     color: yellow;
+}
+footer{
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(56, 55, 55);
 }
