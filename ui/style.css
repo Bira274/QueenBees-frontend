@@ -1,0 +1,355 @@
+html,body{
+    margin: 0%;
+    box-sizing: border-box;
+    background-color:white;
+    border-radius: 20px;
+    
+}
+header{
+  background-color:black ;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+#logo{
+    width: 100px;
+    margin: 10px;
+
+}
+.container{
+    position: relative;
+    margin: 2% auto;
+    min-height: 80%;
+    width: 50%;
+    /* background-image: linear-gradient(to right,white,black); */
+    background-color:black;
+    border-radius: 15px;
+    padding: 0px 0px 5px 15px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    text-align: center;
+}
+.reg-form{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#p{
+  font-size: 40px;
+  color: orange;
+  margin-top: 5px;
+}
+#p2{
+  font-size: 22px;
+}
+
+.avatar{
+    width: 90px;
+    border-radius: 10px;
+    
+}
+#avat{
+  text-align: center;
+  padding-top: 10px;
+  /* background-color: #FCB43A; */
+ margin-top: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+input {
+    width: 100%;
+    outline: none;
+    border: 1px solid grey;
+    background: transparent;
+    color: white;
+  }
+  input[type=text] {
+    width: 80%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  input[type=email] {
+    width: 80%;
+    padding: 14px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+  }
+  input[type=email]:focus {
+    border-color:blue;
+    outline: none;
+  }
+  input[type=text]:focus {
+    border-color:blue;
+    outline: none;
+  }
+  input[type=password]:focus {
+    border-color: blue;
+    outline: none;
+  }
+  input[type=tel]:focus {
+    border-color:blue;
+    outline: none;
+  }
+  input[type=tel] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px
+   
+  }
+  ::placeholder{
+    color: white;
+    
+  }
+  input[type=password] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 8px;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); */
+  }  
+  input[type=submit] {
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border-radius: 10px;
+    background-color: #009688;
+    border: none;
+    /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6); */
+
+  }
+  label{
+      text-transform: capitalize;
+      font-size: 20px;
+       padding-right: 25rem;
+       font-weight: bold;
+      
+  }
+  input[type=submit]:after{
+      content: "";
+      position: absolute;
+      display: none;
+  }
+  #log{
+    color: black;
+  }
+  .Footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    min-height: 4%;
+    width: 100%;
+    background-color:black;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+  h6{
+    color: white;
+    padding-left: 20px;
+    font-size: 18px;
+  }
+  
+  .Follow-us{
+      display: flex;
+      padding-left: 20px;
+
+      
+  }
+  a{
+    display: inline-block;
+    padding: 10px;
+    color: white;
+    text-align: center;
+  }
+  
+.nau ul{
+  margin: 20px;
+  float:right;
+
+}
+.nav li{
+padding: 5px;
+font-size: 20px;
+display:inline-block ;
+}
+.nav a{
+text-decoration: none;
+text-emphasis: left; 
+}
+h1,h2{
+text-transform: uppercase;
+text-align: center;
+color:orange;
+}
+p{
+  font-size: 18px;
+  width: 100%;
+  text-align: center;
+  padding-right:40px  ;
+  color: black;
+}
+.vision{
+  font-size: 22px;
+  
+}
+.about{
+  display: flex;
+  justify-content: center;
+  
+}
+/* .bee{
+  width: 100%;
+}                            */
+.contact{
+  position: relative;
+  margin: 8% auto;
+  min-height: 80%;
+  width: 50%;
+  /* box-shadow: 0 2px 16px rgba(0, 0, 0, 0.4); */
+  background:rgba(0,0,0, 0.4);
+  padding: 0px 0px 5px 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+}
+#fullname{
+  border: 1px solid white;
+  background-color:rgba(0,0,0, 0.2) ;
+  width: 50%;
+}
+#emails{
+  border: 1px solid white;
+  background-color:hsla(0, 0%, 0%, 0.2) ;
+  margin-left: 20px;
+  width: 50%;
+}
+#password{
+  border: 1px solid white;
+  background-color:rgba(0,0,0, 0.2) ;
+  width: 50%;
+}
+#phonenumber{
+  border: 1px solid white;
+  background-color:rgba(0,0,0, 0.2) ;
+  margin-left: 25px;
+  width: 50%;
+}
+#textarea{
+  border: 1px solid white;
+  background-color:rgba(32,20,20, 0.007);
+  background: transparent;
+  border: none;
+  outline: none;
+  
+  
+}
+#submit{
+  border: 1px solid white;
+  background-color:rgba(32, 20, 20, 0.007) ;
+  width: 40%;
+  height: 40px;
+  background-color: orange;
+
+}
+.name{
+  display: flex;
+  padding: 20px;
+
+}
+.email{
+  display:flex;
+}
+mycolors{
+  border-color: red;
+}
+mycolor{
+  border-color:green;
+}
+.link{
+color: white;
+}
+.containers {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+ 
+}
+button{
+  margin-left: 2rem;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background-color: orange;
+  color: white;
+  font-size: 22px;
+}
+/* @media(max-width:500px){
+  html{
+    width: 100%; */
+  /* }
+} */
+/* on small screens */
+ @media only screen and (max-width: 600px) {
+  html {
+    width: 100%;
+    
+  }
+  
+  header{
+    width: 100%;
+    font-size: 4px;
+    margin-right: 1%;
+  }
+  main{
+    margin-left: 10px;
+  } 
+
+  .container{
+    position: relative;
+    margin: 2%;
+    /* background-image: linear-gradient(to right,white,black); */
+    left: 5;
+    margin-left: 15%;
+   
+
+
+  }
+  .reg-form{
+    display: unset;
+  }
+  .img-container{
+    display: none;
+  }
+
+
+ }
+
+ @media only screen and (max-width: 600px) {
+.about{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.bee{
+  width: 50%;
+}
+.about-us{
+  width: 50%;
+  margin-left: 5%;
+}
+.contact-us{
+  width: 50%;
+}
+ }
