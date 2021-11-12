@@ -1,16 +1,20 @@
 body{
-    background-color:#FCB43A;
+    background-image: url(../images/20211111_230851.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
     margin: 0px;
 }
+/* positioning parts of profile */
 .container{
-    background-color: teal;
+    background-color: black;
     display: grid;
-    /* grid-template-columns: auto 400px auto; */
     grid-template-rows: [row1-start] 150px [row1-end row2-start] 450px [row2-end];
     grid-template-columns: [column1-start] 250px [column1-end column2-start] 300px [column2-end];
     grid-template-areas: 
     "logo header header header"
     "sidebar main main main";
+    margin: 0px;
 }
 .header{
     background-color: #FCB43A;
@@ -20,19 +24,20 @@ body{
 .header h1{
     font-size: 40px;
 }
+.header h4{
+    margin-left: 300px;
+    color: blue;
+}
 .sidebar{
     background-color: black;
     grid-area: sidebar;
     color: #FFE05D;
-    /* border-radius: 8px; */
 }
 li{
-    /* list-style-image: url(../images/yelspoon.PNG); */
     padding-bottom: 45px;
     padding-top: 40px;
     padding-left: 35px;
     font-size: 18.5px;
-    /* margin-bottom: 10px; */
 }
 ul a{
     text-decoration: none;
@@ -59,12 +64,9 @@ ul a:hover{
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
-
+/* styling status edit */
 .profile{
-    /* background-color: burlywood; */
-    margin-left: 15px;
     margin-right: 50px;
-    /* margin-bottom: 100px; */
     padding: 5px 30px;
 }
 .profile img{
@@ -78,33 +80,56 @@ ul a:hover{
     border-radius: 5px;
     width: 230px;
     height: 30px;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    color: black;
 }
 .profile input[type=text]::placeholder{
     color: black;
     text-align: center;
-    font-size: 20px;
+    font-size: 30px;
     font-style: italic;
 }
 .email input[type=text]{
     background-color: rgb(247, 247, 247);
     margin-left: 79px;
     height: 20px;
-    /* border-bottom: 2px solid #FCB43A; */
+    text-align:left;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
 }
 .cohort input[type=text]{
     background-color: rgb(247, 247, 247);
     margin-left: 73px;
     height: 20px;
-}
-.facilitator input[type=text]{
-    background-color: rgb(247, 247, 247);
-    margin-left: 10px;
-    height: 20px;
+    text-align:left;
+    font-style: normal;
+    font-size: 15px;
+    color: black;
 }
 
+.facilitator select{
+    background-color: rgb(247, 247, 247);
+    /* margin-left: 73px; */
+    height: 20px;
+    text-align:left;
+    font-style: normal;
+    font-size: 14px;
+    color: black;
+    margin-left: 5px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    width: 230px;
+}
+.profile label{
+    font-weight: bolder;
+    font-size: 16px;
+}
+/* styling score access */
 .calender{
-    /* background-color: chocolate; */
-    /* margin-left: 200px; */
     padding-top: 20px;
     text-align: center;
     font-size: 20px;
@@ -112,11 +137,9 @@ ul a:hover{
 .calender img{
     width: 100px;
     height: 100px;
-    /* padding-left: 40px; */
 }
 .progress{
     padding-top: 50px;
-    /* background-color: goldenrod; */
 }
 .progress img{
     width: 100%;
@@ -130,9 +153,8 @@ ul a:hover{
 .main a:hover{
     text-decoration: underline;
 }
-
+/* styling footer */
 footer{
-    /* background-color: goldenrod; */
     margin: 0px;
     text-align: center;
     font-weight: bolder;
