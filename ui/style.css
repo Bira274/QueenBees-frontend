@@ -2,7 +2,7 @@ html,body{
     margin: 0%;
     box-sizing: border-box;
     background-color:white;
-    border-radius: 20px;
+    border-radius: 30px;
     
 }
 header{
@@ -14,9 +14,13 @@ header{
 }
 #logo{
     width: 100px;
-    margin: 10px;
+   float: left;
 
 }
+.fav{
+  padding-right: 530px;
+}
+
 .container{
     position: relative;
     margin: 2% auto;
@@ -70,7 +74,7 @@ input {
     margin: 8px 0;
     box-sizing: border-box;
     border-radius: 8px;
-  }
+  }          
   input[type=email] {
     width: 80%;
     padding: 14px 20px;
@@ -79,19 +83,19 @@ input {
     border-radius: 8px;
   }
   input[type=email]:focus {
-    border-color:blue;
+    border-color:orange;
     outline: none;
   }
   input[type=text]:focus {
-    border-color:blue;
+    border-color:orange;
     outline: none;
   }
   input[type=password]:focus {
-    border-color: blue;
+    border-color:orange;
     outline: none;
   }
   input[type=tel]:focus {
-    border-color:blue;
+    border-color:orange;
     outline: none;
   }
   input[type=tel] {
@@ -162,6 +166,8 @@ input {
       padding-left: 20px;
 
       
+  }.copy{
+    color: white;
   }
   a{
     display: inline-block;
@@ -248,8 +254,6 @@ p{
   background: transparent;
   border: none;
   outline: none;
-  
-  
 }
 #submit{
   border: 1px solid white;

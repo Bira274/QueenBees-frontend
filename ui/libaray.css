@@ -1,0 +1,182 @@
+html,body{
+    margin: 0;
+    box-sizing: border-box;
+    background-color: white;
+}
+header{
+    background-color:black ;
+    display:flex;
+    width: 100%;
+  }
+  #logo{
+    width: 100px;
+    margin: 10px;
+    padding-right: 45%;
+
+}
+h2{
+
+  text-transform: uppercase;
+  text-align: center;
+  color: orange;
+}
+.img{
+  min-width: 250px;
+  min-height: 100px;
+}
+.box-container{
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* column-gap: 15px;
+  margin-left: 20px; */
+ 
+  
+}
+.box{
+  width: 16rem;
+  height: 29rem;
+  position: relative;
+  margin: 1.5rem;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+
+}
+.a{
+  color: white;
+padding-left: 400px;
+  text-decoration: none;
+  font-size: 20px;
+  margin-top: 50px;
+  
+  
+}
+.code{
+  color: orange;
+  text-transform: capitalize;
+  padding-left:300px;
+  text-align: center;
+  margin-top: 30px;
+}
+.content{
+  padding-left: 15px;
+}
+h3,h4{
+  margin-left: 15px;
+}
+i{
+  color: orange;
+}
+.form{
+  text-align: center;
+  margin-top: 10rem;
+  
+}
+input {
+  width: 70%;
+  outline: none;
+  border: 1px solid grey;
+  background: transparent;
+  color: white;
+  padding: 10px;
+  margin: 8px;
+}
+.form{
+  position: relative;
+  margin: 2% auto;
+  height: 100%;
+  width: 50%;
+  background-color:black;
+  padding: 0px 0px 5px 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+}
+.container{
+  position: relative;
+  margin: 2% auto;
+  height: 100%;
+  width: 50%;
+  background-color:black;
+  
+  padding: 0px 0px 5px 15px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  text-align: center;
+}
+label{
+  color: white;
+}
+.name{
+  display: flex;
+}  input[type=text] {
+  width: 100%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+ input[type=text] {
+  width: 80%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 10px;
+
+}
+input[type=file] {
+  width: 80%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 10px;
+
+}
+input[type=submit] {
+  width: 80%;
+  padding: 14px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin-top: 10px;
+
+}
+.alink{
+ margin-top: 30px;
+ padding: 10px;
+ color: white;
+ text-decoration: none;
+ font-size: 20px;
+}
+.favs{
+  padding-left: 80px;
+  margin-top: 40px;
+}
+@media only screen and (max-width: 600px) {
+  html {
+    width: 100%;
+    
+  }
+  
+  header{
+    width: 100%;
+    font-size: 4px;
+    margin-right: 1%;
+  }
+ body{
+width: 100%;
+margin-left: 20px;
+text-align: center;
+
+ }
+   
+
+
+  
+}            
+
+

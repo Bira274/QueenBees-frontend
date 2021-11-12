@@ -1,25 +1,36 @@
 const form=document.querySelector("#form")
 
 function validate(){
-    let password = document.getElementById("pwd").Value;
+    // let password = document.getElementById("pwd").Value;
     
-    if(password=="" || password==" ")
+    if(!password =="")
     {
-        alert("Password should not be a null or an empty string.")
+        alert("Password should not be shorter than 6 or an empty string.")
         return false;
+    }else{
+        return true
     }
+    
+}
+const success=()=>{
+    let registerDone=document.forms['form'].value;
+    if(registerDone==""){
+        alert("registration failed")
+        return false;
+    }else{
+        alert('registration successful')
+    }
+    
 }
 
-let name = document.querySelector('#name');
+
+
+let name = document.querySelector('#name').value;
 let email = document.querySelector('#email').value
 let password = document.querySelector('#pwd').value
 let phone = document.querySelector('#phone').value;
 
-const handleChange=(e)=>{
-    e.preventDefault();
-    console.log(e, 'onchange')
-    document.querySelector(`#${e.target.id}`).value = e.target.value
-}
+
 
 
 // name.addEventListener('change', (e)=>{
@@ -27,29 +38,29 @@ const handleChange=(e)=>{
 // });
 
 
-const registerUser=async()=>{
+const registerUser=()=>{
+
+
     const user={
         name, email, password, phone
     }
-    const url = 'http://localhost:3000/register'
-    try{
-        result = await fetch(url, {
-            method: 'POST',
-            body: JSON.stringify(user)
-        });
-    
-        if (result){
-           window.location.href ='http://127.0.0.1:5500/ui/student.html' 
-        }
-
-    }catch(err){
-        console.log('failed to register')
+    if(validate()){
+        localStorage.setItem('user', JSON.stringify(user));
+        window.location.href ='http://127.0.0.1:5500/ui/login.html' 
+        success()
+    }else{
+        // fail
+        alert('failed  toregister') 
     }
+
+    
+
 }
 
 form.addEventListener('submit', (e)=>{
     e.preventDefault();
     console.log('submitting------')
     registerUser();
+
 })
 
